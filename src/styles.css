@@ -1,0 +1,13 @@
+body {
+  background-color: #eeeeee;
+  max-width: 60%;
+  line-height: 1.4;
+  margin: 50px auto;
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.6;
+}
