@@ -8,7 +8,9 @@
   </head>
   <body>
     <header>
-      <h1>This is <em>still</em> a motherfucking website.</h1>
+      <h1>This is <em>still</em> a motherfucking website. 
+        <input type="button" value="mode psychédélique" class="btn" onclick="psychedelic()">
+      </h1>
       <aside>And it's more fucking perfect than the last guy's.</aside>
     </header>
     <h2>Seriously, it takes minimal fucking effort to improve this shit.</h2>
@@ -111,6 +113,43 @@
         );
         ga("create", "UA-46163202-2", "auto");
         ga("send", "pageview");
+
+        function psychedelic() {
+          var body = document.getElementsByTagName("body")[0];
+          var parags = document.getElementsByTagName("p");
+          var h1s = document.getElementsByTagName("h1");
+          var h2s = document.getElementsByTagName("h2");
+          var h3s = document.getElementsByName("h3");
+
+          body.style.backgroundColor = "magenta";
+          for (let parag of parags) {
+            parag.style.color = "blue";
+            parag.style.fontFamily = "courier";
+          }
+          for (let h1 of h1s) {
+            h1.style.color = "green";
+            h1.style.fontFamily = "Comic Sans";
+          }
+          for (let h2 of h2s) {
+            h2.style.color = "green";
+            h2.style.fontFamily = "Comic Sans";
+          }
+          for (let h3 of h3s) {
+            h3.style.color = "green";
+            h3.style.fontFamily = "Comic Sans";
+          }
+      }
+
+      function popup() {
+        setTimeout(
+          function(){ 
+  	        var isOK = confirm("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please");
+            if(isOK) location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          }, 
+        10000);
+      }
+      popup();
+      
       </script>
     </p>
   </body>
